@@ -1,5 +1,5 @@
 public class Rome1 {
-    void rome1(String c) {
+    static String rome1(String c) {
 
         switch (c) {
             case "1":
@@ -303,6 +303,7 @@ public class Rome1 {
                 c = "C";
                 break;
         }
-        System.out.println(c);
+        return c;
+        //System.out.println(c);
     }
 }

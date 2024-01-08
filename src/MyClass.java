@@ -6,14 +6,14 @@ public class MyClass {
         Scanner sc = new Scanner(System.in);
 
         String d = sc.nextLine();
-        d.replace(" ", "");
+        String dd = d.replace(" ", "");
 
         if (d.contains("*")) {
             int znak1 = d.indexOf('*') ;
-            String firstnumber = d.substring(0, znak1);
-            String secondnumber = d.substring(znak1+1);
-            Rome2 rome = new Rome2();
-            rome.rome2(firstnumber, secondnumber);
+            int [] result = Map2.map2(d.substring(0, znak1), d.substring(znak1+1));
+            int result1 = Multiply.multiplication(result);
+            String c = Rome1.rome1(String.valueOf(result1));
+            System.out.println(c);
         }
 
         if (d.contains("/")) {
