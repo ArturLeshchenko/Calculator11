@@ -1,5 +1,5 @@
-public class Rome1 {
-    static String rome1(String c) {
+public class Map1 {
+    static String map1(String c) {
 
         switch (c) {
             case "1":

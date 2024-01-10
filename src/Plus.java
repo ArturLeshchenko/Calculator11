@@ -1,9 +1,9 @@
 public class Plus {
-    void plus(int a, int b) {
-        int result = a + b;
-        String c = Integer.toString(result);
-        Rome1 rome = new Rome1();
-        rome.rome1(c);
+    static int plus(int[] result) {
+        int a = result[0];
+        int b = result [1];
+        int result1 = a + b;
+        return result1;
     }
 }
 
