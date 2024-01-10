@@ -7,18 +7,18 @@ public class Main {
 
         String d = sc.nextLine();
         String dd = d.replace(" ", "");
-        int znak5 = dd.indexOf('*');
-        int znak6 = dd.indexOf('/');
-        int znak7 = dd.indexOf('+');
-        int znak8 = dd.indexOf('-');
-        String z = dd.substring(0, znak5);
-        String y = dd.substring(znak5 + 1);
-        String w = dd.substring(0, znak6);
-        String q = dd.substring(znak6 + 1);
-        String e = dd.substring(0, znak7);
-        String o = dd.substring(znak7 + 1);
-        String i = dd.substring(0, znak8);
-        String u = dd.substring(znak8 + 1);
+        int znak1 = dd.indexOf('*');
+        int znak2 = dd.indexOf('/');
+        int znak3 = dd.indexOf('+');
+        int znak4 = dd.indexOf('-');
+        String z = dd.substring(0, znak1);
+        String y = dd.substring(znak1 + 1);
+        String w = dd.substring(0, znak2);
+        String q = dd.substring(znak2 + 1);
+        String e = dd.substring(0, znak3);
+        String o = dd.substring(znak3 + 1);
+        String i = dd.substring(0, znak4);
+        String u = dd.substring(znak4 + 1);
 
 
         if ((z == "1" || z == "2" || z == "3" || z == "4" || z == "5" || z == "6" || z == "7" || z ==  "8" || z == "9" || z == "10") && (y == "1" || y == "2" || y == "3" || y == "4" || y == "5" || y == "6" || y == "7" || y ==  "8" || y == "9" || y == "10")) {
