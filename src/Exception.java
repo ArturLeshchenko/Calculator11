@@ -4,8 +4,8 @@ public class Exception {
                 z.equals("7") || z.equals("8") || z.equals("9") || z.equals("10")) && (y.equals("1") || y.equals("2")
                 || y.equals("3") || y.equals("4") || y.equals("5") || y.equals("6") || y.equals("7") || y.equals("8")
                 || y.equals("9") || y.equals("10"))) {
-            int result = Multiply.multiplication(Integer.parseInt(z),Integer.parseInt(y));
-            System.out.println(result);
+            ArabNumbers.arabNumbers(String.valueOf(dd));
+            //System.out.println(result);
         }
         if ((z.equals("I") || z.equals("II") || z.equals("III") || z.equals("IV") || z.equals("V") || z.equals("VI")
                 || z.equals("VII") || z.equals("VIII") || z.equals("IX") || z.equals("X")) && (y.equals("I") || y.equals("II")
