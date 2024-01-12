@@ -1,8 +1,6 @@
 public class Multiply {
-    static int multiplication(int[] result) {
-        int a = result[0];
-        int b = result [1];
+    static int multiplication(int a, int b) {
         int result1 = a * b;
-        return result1;
+        return a * b;
     }
 }

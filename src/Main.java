@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String d = sc.nextLine();
         String dd = d.replace(" ", "");
-        Base.base(String.valueOf(dd));
+        Base.base(dd);
     }
 }
 

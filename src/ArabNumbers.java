@@ -1,47 +1,29 @@
 public class ArabNumbers {
-    static String arabnumbers(String dd) {
-
+    static String arabNumbers(String dd) {
+        String z;
+        String y;
+        int znak;
         if (dd.contains("*")) {
-            int znak1 = dd.indexOf('*');
-            String z = dd.substring(0, znak1);
-            String y = dd.substring(znak1 + 1);
-            int a = Integer.parseInt(z);
-            int b = Integer.parseInt(y);
-            int[] result = {a, b};
-            int result1 = Multiply.multiplication(result);
+            int result1 = Multiply.multiplication(Integer.parseInt(dd.substring(0, dd.indexOf('*'))),
+                    Integer.parseInt(dd.substring(dd.indexOf('*') + 1)));
             System.out.println(result1);
         }
 
         if (dd.contains("/")) {
-            int znak1 = dd.indexOf('/');
-            String z = dd.substring(0, znak1);
-            String y = dd.substring(znak1 + 1);
-            int a = Integer.parseInt(z);
-            int b = Integer.parseInt(y);
-            int[] result = {a, b};
-            int result1 = Division.division(result);
+            int result1 = Division.division(Integer.parseInt(dd.substring(0, dd.indexOf('/'))),
+                    Integer.parseInt(dd.substring(dd.indexOf('/') + 1)));
             System.out.println(result1);
         }
 
         if (dd.contains("+")) {
-            int znak1 = dd.indexOf('+');
-            String z = dd.substring(0, znak1);
-            String y = dd.substring(znak1 + 1);
-            int a = Integer.parseInt(z);
-            int b = Integer.parseInt(y);
-            int[] result = {a, b};
-            int result1 = Plus.plus(result);
+            int result1 = Plus.plus(Integer.parseInt(dd.substring(0, dd.indexOf('+'))),
+                    Integer.parseInt(dd.substring(dd.indexOf('+') + 1)));
             System.out.println(result1);
         }
 
         if (dd.contains("-")) {
-            int znak1 = dd.indexOf('-');
-            String z = dd.substring(0, znak1);
-            String y = dd.substring(znak1 + 1);
-            int a = Integer.parseInt(z);
-            int b = Integer.parseInt(y);
-            int[] result = {a, b};
-            int result1 = Minus.minus(result);
+            int result1 = Minus.minus(Integer.parseInt(dd.substring(0, dd.indexOf('+'))),
+                    Integer.parseInt(dd.substring(dd.indexOf('+') + 1)));
             System.out.println(result1);
         }
         return dd;
