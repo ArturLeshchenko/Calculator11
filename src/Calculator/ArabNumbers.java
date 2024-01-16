@@ -1,8 +1,10 @@
+package Calculator;
+
 public class ArabNumbers {
-    static String arabNumbers(String dd) {
-        String z;
-        String y;
-        int znak;
+    static void arabNumbers(String dd) {
+//        String z;
+//        String y;
+//        int znak;
         if (dd.contains("*")) {
             int result1 = Multiply.multiplication(Integer.parseInt(dd.substring(0, dd.indexOf('*'))),
                     Integer.parseInt(dd.substring(dd.indexOf('*') + 1)));
@@ -26,6 +28,5 @@ public class ArabNumbers {
                     Integer.parseInt(dd.substring(dd.indexOf('-') + 1)));
             System.out.println(result1);
         }
-        return dd;
     }
 }

@@ -1,6 +1,8 @@
+package Calculator;
+
 public class RomeNumbers {
 
-    static String romenumbers(String dd) {
+    static void romenumbers(String dd) {
         int znak;
         if (dd.contains("*")) {
             znak = dd.indexOf('*');
@@ -41,6 +43,5 @@ public class RomeNumbers {
             String c = Map1.map1(String.valueOf(result1));
             System.out.println(c);
         }
-        return dd;
     }
 }

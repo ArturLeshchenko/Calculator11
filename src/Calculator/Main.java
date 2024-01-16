@@ -1,4 +1,5 @@
-import javax.management.InvalidAttributeValueException;
+package Calculator;
+
 import java.util.Scanner;
 
 public class Main {

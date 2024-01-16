@@ -1,3 +1,5 @@
+package Calculator;
+
 public class Exception {
     static void exception (String z, String y, String dd) {
         if ((z.equals("1") || z.equals("2") || z.equals("3") || z.equals("4") || z.equals("5") || z.equals("6") ||
@@ -5,7 +7,6 @@ public class Exception {
                 || y.equals("3") || y.equals("4") || y.equals("5") || y.equals("6") || y.equals("7") || y.equals("8")
                 || y.equals("9") || y.equals("10"))) {
             ArabNumbers.arabNumbers(String.valueOf(dd));
-            //System.out.println(result);
         }
         if ((z.equals("I") || z.equals("II") || z.equals("III") || z.equals("IV") || z.equals("V") || z.equals("VI")
                 || z.equals("VII") || z.equals("VIII") || z.equals("IX") || z.equals("X")) && (y.equals("I") || y.equals("II")

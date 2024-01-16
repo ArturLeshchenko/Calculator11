@@ -1,3 +1,5 @@
+package Calculator;
+
 public class Map2 {
     static int[] map2(String firstnumber, String secondnumber){
         int a = 0;
@@ -67,7 +69,6 @@ public class Map2 {
                 b = 10;
                 break;
         }
-        int [] result = {a, b};
-        return result;
+        return new int[]{a, b};
     }
 }

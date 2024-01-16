@@ -1,3 +1,5 @@
+package Calculator;
+
 public class Map1 {
     static String map1(String c) {
 
