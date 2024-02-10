@@ -14,9 +14,9 @@ public class Car {
         this.color = color;
         this.owner = owner;
     }
-    public void presentationCar(){
-        System.out.println("Марка моей машины " + brand + " " + model + "Гос.номер " + stateRegistrationNumber +
-                " Цвет машины  " + color);
+    public String presentationCar(){
+        return "Марка моей машины " + brand + " " + model + "Гос.номер " + stateRegistrationNumber +
+                " Цвет машины  " + color;
     }
 
     @Override
