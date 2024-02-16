@@ -1,10 +1,15 @@
 package Person;
 
+import Service.PersonService;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args)  {
+
+        PersonService personService = new PersonService();
 
         Car car1 = new Car("Woltvagen", "Polo", "А205БВ", "Черный", "Артем");
         Car car2 = new Car("Лада", "Vesta", "Г307ТТ", "Белый", "Богдан");
@@ -24,11 +29,6 @@ public class Main {
         carList.add(car7);
         carList.add(car8);
 
-
-//        for (Car r : carList){
-//            r.presentationCar();
-//        }
-
         Passport passport1 = new Passport("Артем", "01.01.1980", "Москва");
         Passport passport2 = new Passport("Богдан", "02.02.1992", "Ростов");
         Passport passport3 = new Passport("Влад", "03.03.1995", "Волгоград");
@@ -46,12 +46,6 @@ public class Main {
         passportList.add(passport6);
         passportList.add(passport7);
         passportList.add(passport8);
-//        for (Passport a : passportList){
-//           a.getCity();
-//      }
-
-
-
 
         Person person1 = new Person("Артем", "Иванов", 20, "Архитектор", 75000, car1, passport1);
         Person person2 = new Person("Богдан", "Ткаченко", 31, "Инженер", 40000, car2, passport2);
@@ -71,25 +65,35 @@ public class Main {
         personList.add(person7);
         personList.add(person8);
 
-        for (Passport a : passportList){
-            String b = a.getCity();
-            Passport.presentationPassport(personList, b);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите цифру для выбора фильтрации");
+        System.out.println("Нажмите 1 для  фильтрации Города");
+        System.out.println("Нажмите 2 для  фильтрации Возраста");
+        String enter = sc.nextLine();
+        if (enter.equals("1")) {
+            List <Person> filteredPersons = personService.filterByCity(personList);
+            for (Person p : filteredPersons) {
+                System.out.println(p);
+            }
+
+        }
+        if (enter.equals("2")) {
+            List <Person> filteredPersons1 = personService.filterByAge(personList);
+            for (Person p : filteredPersons1) {
+                System.out.println(p);
+            }
+
         }
 
+//        List <Person> filteredPersons = personService.filterByCity(personList);
+//        for (Person p : filteredPersons) {
+//            System.out.println(p);
+//        }
 
-        //Passport.presentationPassport(personList, b);
-
-
-
-        System.out.println(personList);
-
-//        person3.setJob("Уборщик");
-//        System.out.println(person3.getJob());
-//
-//       for (Person p : personList){
-//           p.presentationPassport();
-//       }
-//
+//        List <Person> filteredPersons1 = personService.filterByAge(personList);
+//        for (Person p : filteredPersons1) {
+//            System.out.println(p);
+//        }
     }
 }
 

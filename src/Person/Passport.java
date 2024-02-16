@@ -1,5 +1,6 @@
 package Person;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
@@ -20,22 +21,6 @@ public class Passport {
     public String getCity() {
         return this.city;
     }
-
-    public static List presentationPassport(List<Person> personList, String b){
-        Scanner sc = new Scanner(System.in);
-        String d = sc.nextLine();
-
-        for (Person p : personList){
-            //p.getPassport();
-
-            if (!b.equals(d)) {
-                personList.remove(p);
-
-            }
-        }
-        return personList;
-    }
-
 
     @Override
     public String toString() {

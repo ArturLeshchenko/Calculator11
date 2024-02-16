@@ -24,6 +24,13 @@ public class Person {
             this.passport = passport;
 
         }
+
+
+
+
+
+
+
     public void presentation(){
 
         System.out.println("Меня зовут " + name + " " + surname + "мне " + age + " лет" + " моя работа - " + job
@@ -69,4 +76,5 @@ public class Person {
     public void setJob(String job) {
         this.job = job;
     }
+
 }
